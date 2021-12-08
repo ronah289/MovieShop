@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF3F2">
+
+    <TextView
+        android:id="@+id/welcomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:text="@string/welcome"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/my_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/welcomeUser"
+        android:layout_alignParentEnd="true"
+        android:text="@string/my_profile" />
+
+    <TextView
+        android:id="@+id/available_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24.5dp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/available_novel_based_movies" />
+
+    <ListView
+        android:id="@+id/available_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/available_list"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
